@@ -5,8 +5,12 @@ body {
     height: 100%;
 }
 
-* {
-    color: white;  
+
+
+#comments {
+    color: black;
+    height: 200px;
+    width: 500px;
 }
 
 img {
@@ -14,6 +18,7 @@ img {
     padding: 0 50px 0 20px;
     width: 200px;
     height: 200px;
+    
 
 }
 
@@ -33,7 +38,6 @@ p {
     text-align: left;
     font-family: serif;
     margin: 50px;
-    
 }
 
 .coloredlinks {
