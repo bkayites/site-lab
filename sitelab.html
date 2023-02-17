@@ -20,9 +20,18 @@
     <h2>About Us</h2>
 
     <div class="container">
+        <fieldset>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </fieldset>
+        
+        
 
         <form action="/login" method="post">
-            <input type="text" name="name">
+            <label for="name">
+                <input type="text" name="name" id="name">name
+            </label>
+            
             <input type="date" name="birthday">
             <input type="time" name="game-time">
             <input type="email" name="email">
@@ -30,15 +39,40 @@
         </form> 
 
         <form action="/login" method="post">
-            <input type="radio" name="day" value="Monday" checked>Monday
-            <input type="radio" name="day" value="Tuesday">Tuesday
-            <input type="radio" name="day" value="Tuesday">Tuesday
+            <label>
+                <input type="radio" name="day" value="Monday" checked>Monday
+            </label>
+
+            <label>
+                <input type="radio" name="day" value="Tuesday">Tuesday
+            </label>
+            
+            <label>
+                <input type="radio" name="day" value="Tuesday">Tuesday
+            </label>
+            
         </form>
         
         <form action="/login" method="post">
             <input type="checkbox" name="day" value="Monday" checked>Monday
             <input type="checkbox" name="day" value="Tuesday">Tuesday
             <input type="checkbox" name="day" value="Tuesday">Tuesday
+        </form>
+
+        <form action="/login" method="post">
+            <select name="day" id="day" multiple>
+                <option value="Friday" selected>Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </form>
+
+        <form action="/login" method="post">
+            <input type="submit" name="submit" value="send">
+
+            <button name="submit">Send us</button>
+            <input type="file" name="file">
+
         </form>
 
         <img src="MickeyMouse.jpeg" alt="Mickey Mouse">
